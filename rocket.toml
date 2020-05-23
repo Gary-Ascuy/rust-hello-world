@@ -1,0 +1,26 @@
+# Except for the secret key, none of these are actually needed; Rocket has sane
+# defaults. We show all of them here explicitly for demonstrative purposes.
+
+[global.limits]
+forms = 32768
+json = 1048576
+msgpack = 1048576
+
+[global]
+address = "0.0.0.0"
+port = 3666
+keep_alive = 5
+workers = 1
+
+[development]
+hi = "Trust me, Rust will dominate the World!"
+log = "normal"
+is_extra = true
+
+[staging]
+workers = 2
+log = "normal"
+
+[production]
+workers = 2
+log = "critical"
