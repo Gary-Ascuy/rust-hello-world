@@ -3,3 +3,6 @@
 name = "hello_world"
 version = "0.0.1"
 authors = [ "Gary Ascuy <gary.ascuy@gmail.com>" ]
+
+[dependencies]
+rocket = "0.4.4"
