@@ -7,3 +7,7 @@ publish = false
 
 [dependencies]
 rocket = "0.4.4"
+cargo-watch = "7.3.0"
+
+[profile.dev]
+panic = "abort"

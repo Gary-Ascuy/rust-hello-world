@@ -4,9 +4,18 @@
 
 #[get("/")]
 fn index() -> &'static str {
-    "Hello, world!"
+    "Trust me, Rust will dominate the World!"
+}
+
+#[get("/home")]
+fn home() -> &'static str {
+    "Just another borring route"
+}
+
+fn rocket() -> rocket::Rocket {
+    rocket::ignite().mount("/", routes![index, home])
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index]).launch();
+    rocket().launch();
 }
