@@ -9,7 +9,7 @@ fn index() -> &'static str {
 
 #[get("/home")]
 fn home() -> &'static str {
-    "Just another borring route"
+    "{ \"name\": \"Gary Ascuy\" }"
 }
 
 fn rocket() -> rocket::Rocket {
