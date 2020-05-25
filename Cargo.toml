@@ -12,3 +12,10 @@ cargo-edit = "0.6.0"
 
 [profile.dev]
 panic = "abort"
+
+[docker]
+name = "server"
+version = "1.0.0"
+maintainer = "Gary Ascuy <gary.ascuy@gmail.com>"
+temp_folder = "./.tmp_docker"
+tag = "garyascuy/cargo-rocket-example"
